@@ -392,6 +392,7 @@ class natlas_network:
                 child    = natlas_node()
                 child.ip = [n.remote_ip]
                 dcodes  |= DCODE_INCLUDE
+                query_result = None
             else:
                 # discover this node
                 child, query_result = self.__query_node(n.remote_ip, n.remote_name)
